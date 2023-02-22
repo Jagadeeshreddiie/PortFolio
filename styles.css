@@ -275,3 +275,20 @@ body{
     filter:blur(2px);
     color:yellow;
 }
+.hire-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    height:30vh;
+    margin:20px auto;
+    border:1px solid grey;
+    text-align:center;
+}
+.hire-me:hover .heading{
+    color:white;
+    transform: translateX(0);
+    filter:blur(0);
+    opacity: 1;
+    font-weight: 600;
+}
