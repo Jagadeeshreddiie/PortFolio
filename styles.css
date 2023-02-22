@@ -160,6 +160,7 @@ body{
     .heading{
         transform: translatex(0);
         filter:blur(0);
+        opacity:1;
     }
     .about-matter{
         height:30vh;
@@ -173,6 +174,13 @@ body{
         height:40vh;
         font-size:20px;
         border:1px solid grey;
+    }
+    .hire-me{
+        height:3vh;
+        margin-bottom:40px;
+    }
+    .contact-div{
+        height:40vh;
     }
 }
 .projects-div{
