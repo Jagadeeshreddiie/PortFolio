@@ -17,14 +17,14 @@ body{
 
 .nav{
     font-family:Montserrat;
-    background-color: transparent;
     display:flex;
     height:100px;
     align-items: center;
     padding:10px;
     color:black;
-    margin:0 30px;
-    justify-content: center;    
+    margin:0 30px; 
+    justify-content: center; 
+
 }
 .nav ul{
     display:flex;
@@ -54,6 +54,21 @@ body{
     opacity:0.6;
     filter:blur(1px);
     border:none;
+}
+.starting{
+    display:block;
+}
+.logo {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color:white;
+}
+.logo h3{
+    font-size: 18px;
+    font-weight: 250;
+    padding:20px;
+    font-family: 'Poppins',sans-serif;
 }
 
 /* main about container */
@@ -106,7 +121,7 @@ body{
 }
 .about:hover .heading{
     transform: translateX(0);
-    padding-top:15px;
+    padding-top:5px;
     filter:blur(0);
     font-weight:800;
     font-size: 50px;
@@ -115,24 +130,27 @@ body{
 .about{
     display:flex;
     justify-content:center;
-    padding:40px 0;
+    padding:20px 0;
     margin:20px auto;
     background: transparent;
     transition: all 0.5s ease;
 
 }
+
 .about-matter{
     color:white;
+    font-family: "Montsterrat",sans-serif;
     font-size: 18px;
-    height:85vh;    
+    height:80vh;    
     display: grid;
-    padding:0 30px;
+    padding:0 50px;
     overflow: hidden;
 }
-.show{
-    opacity:1;
-    transform: translateX(0);
-    filter:blur(0);
+
+.about-matter span{
+    color:rgb(255, 159, 33);
+    font-size: 50px;
+    margin-bottom:30px;
 }
 .img img{
     width:500px;
@@ -146,7 +164,17 @@ body{
     display: flex;
     align-items: center;
 }
+.about-matter ul{
+    display: flex;
+    justify-content:space-between;
+}
+.about-matter ul li{
+    list-style: none;
+}
 @media (max-width:1080px){
+    .nav ul li a{
+        font-size:25px;
+    }
     .blur{
         height:20vh;
     }
@@ -161,10 +189,11 @@ body{
         transform: translatex(0);
         filter:blur(0);
         opacity:1;
+        font-size:45px;
     }
     .about-matter{
-        height:30vh;
-        font-size:20px;
+        height:50vh;
+        font-size:25px;
     }
     .img img{
         text-align: left;
@@ -172,15 +201,35 @@ body{
     }
     .group-1{
         height:40vh;
-        font-size:20px;
-        border:1px solid grey;
+        font-size:25px;
+        border:none;
+    }
+    .group-3{
+        height:46vh;
     }
     .hire-me{
         height:3vh;
         margin-bottom:40px;
     }
-    .contact-div{
-        height:40vh;
+    .connect{
+        height:80vh;
+        padding:20px;
+    }
+    .projects-div{
+        padding-top:10px;
+    }
+    .connect-div ul li a{
+        font-size:80px;
+    }
+    .logo h3{
+        font-size:40px;
+    }
+    .about-matter .name{
+        font-size:80px;
+        margin-bottom:10px;
+    }
+    .hire-me{
+        font-size:30px;
     }
 }
 .projects-div{
@@ -227,13 +276,16 @@ body{
     width:250px;
     margin-bottom:35px;
 }
+.container-box{
+    overflow: hidden;
+}
 .connect-div{
     display: flex;
     height: 80vh;
     padding:20px;
     justify-content: center;
     align-items: center;
-
+    overflow: hidden;
 }
 .connect{
     margin-top:20px;
@@ -253,12 +305,7 @@ body{
     gap:50px;
     text-align: center;
 }
-.container-box{
-    overflow: hidden;
-}
-.connect-div{
-    overflow: hidden;
-}
+
 .connect-div ul li a{
     padding:20px;
     color:white;
