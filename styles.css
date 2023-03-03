@@ -141,9 +141,10 @@ body{
     color:white;
     font-family: "Montsterrat",sans-serif;
     font-size: 18px;
-    height:80vh;    
+    height:150vh;    
     display: grid;
     padding:0 50px;
+    
     overflow: hidden;
 }
 
@@ -165,11 +166,15 @@ body{
     align-items: center;
 }
 .about-matter ul{
+    padding-left: 10px;
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content:flex-start;
 }
 .about-matter ul li{
-    list-style: none;
+    line-height: 2;
+    list-style:disc;
+    padding-left: 10px;
 }
 @media (max-width:1080px){
     .nav ul li a{
@@ -227,6 +232,15 @@ body{
     .about-matter .name{
         font-size:80px;
         margin-bottom:10px;
+    }
+    .about-matter ul{
+        padding-left: 10px;
+        display: flex;
+        justify-content:space-between;
+    }
+    .about-matter{
+        line-height:normal;
+        list-style: none;
     }
     .hire-me{
         font-size:30px;
