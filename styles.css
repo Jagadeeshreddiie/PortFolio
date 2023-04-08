@@ -159,11 +159,13 @@ body{
 }
 .img img{
     width:500px;
+    position:'absolute';
     border-radius:15px;
     /* box-shadow: -2px -1px 10px rgb(255,255,255,0.2),5px 3px 25px rgba(0,0,0); */
 
 }
 .img{
+    position:'relative';
     padding:10px 70px;
     text-align: end;
     display: flex;
