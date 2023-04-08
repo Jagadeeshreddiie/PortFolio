@@ -1,3 +1,5 @@
+AOS.init();
+
 const imgPos=document.getElementById('img-pos');
 const heading=document.getElementById('heading');
 
