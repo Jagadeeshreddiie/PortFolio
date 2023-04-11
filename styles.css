@@ -215,7 +215,7 @@ body{
         font-size:45px;
     }
     .about-matter{
-        height:50vh;
+        height:70vh;
         font-size:25px;
     }
     .img img{
@@ -383,4 +383,11 @@ body{
     filter:blur(0);
     opacity: 1;
     font-weight: 600;
+}
+.btn-res{
+    width:200px;
+    height:70px;
+    font-size:15px;
+    color:black;
+    background-color: #f0ac0d;
 }
